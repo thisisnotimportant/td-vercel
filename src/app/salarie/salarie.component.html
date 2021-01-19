@@ -1,0 +1,13 @@
+<form [formGroup]="salaryForm" (ngSubmit)="onSubmit(salaryForm.value)">
+	<div class="form-group">
+		<label for="inputSalary">Salary</label>
+		<input type="text" class="form-control" id="inputSalary" aria-describedby="salaryHelp" placeholder="Enter salary" formControlName="salary">
+		<small id="salaryHelp" class="form-text text-muted">Salary</small>
+	</div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div *ngIf="displayPercent">
+	Pourcentage en dessous de {{salaryValue}}: {{salaryPercent}} %
+</div>
