@@ -5,4 +5,4 @@ Install vercel:
 apt update && apt install -y nodejs npm
 npm i -g vercel
 
-21.1.0
+vercel -v -> 21.1.0
